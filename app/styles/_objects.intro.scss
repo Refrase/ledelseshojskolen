@@ -1,9 +1,28 @@
 /* ----- Intro ----- */
 
 .intro {
-	background: url(../images/mark.jpg) no-repeat center;
-	background-size: cover;
 	padding-bottom: $dist-xxxl; }
+
+.hero-video {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: -1; }
+
+@media ( max-width: 1040px ) { // set in main.scss
+	.hero-video {
+  	width: 120%; }
+}
+
+@media ( max-width: 864px ) { // set in main.scss
+	.hero-video {
+  	width: 140%; }
+}
+
+@media ( max-width: 724px ) { // set in main.scss
+	.hero-video {
+  	width: 160%; }
+}
 
 .row-intro img {
 	position: relative;

@@ -39,21 +39,19 @@ $(document).ready(function() {
 		}
 	});
 
-	// Fuldskærmsvideo
-	$(function(){
-	  $('#videoIntro').css({
-	  	width: $(window).innerWidth() + 'px',
-	  	height: $(window).innerWidth()*0.56 + 'px'
-	  });
-
-	  // Behold fuld skærm ved ændring af vinduestr.
-	  $(window).resize(function(){
-	    $('#videoIntro').css({
-	    	width: $(window).innerWidth() + 'px',
-	    	height: $(window).innerWidth()*0.56 + 'px'
-	    });
-	  });
+	// Fuldskærmsvideo "Hvad er ledelseshøjskolen?"
+	$('#videoIntro').css({
+  	width: $(window).innerWidth() + 'px',
+	  height: $(window).innerWidth()*0.56 + 'px'
 	});
+
+	// Behold fuld skærm ved ændring af vinduestr.
+	$(window).resize(function(){
+    $('#videoIntro').css({
+    	width: $(window).innerWidth() + 'px',
+    	height: $(window).innerWidth()*0.56 + 'px'
+    });
+  });
 
 	// Sæt billedes højde = dets loadede bredde
 	// var cw = $('.faelskab_billeder li').width();
@@ -94,14 +92,6 @@ $(document).ready(function() {
 			$('.tl-p3-cont, .tl-p3-contpic').fadeIn();
    	}
 	});
-
-
-
-
-
-
-
-
 
 
 
